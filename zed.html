@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/gif" href="img/kdsal.png">
+    <title>Чемпионы Зед</title>
+</head>
+<body>
+   
+
+
+
+
+
+  <style>
+
+    .dark-version {
+      /*  width: 70px;
+        height: 44px;
+        position: relative;
+        display: inline-block;
+        border: 5px solid #337AB7;
+        border-radius: 50px;    
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);    */
+    }
+    .dark-version input {
+        display: none;
+    }
+    .dark-version .toggledark {
+      /*  top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        position: absolute;
+        transition: 0.5s;
+        background: #ffffff;
+        border-radius: 50px;*/
+    }
+    .dark-version .toggledark:before {
+        top: 63px;
+        bottom: 0;
+        width: 67px;
+         left: 2px; 
+        content: "";
+        height: 64px;
+        margin: auto 0;
+        position: absolute;
+        transition: 0.5s;
+        background-image: url(img/wwwe.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 17px;
+    }
+    .dark-version input:checked + .toggledark {
+        background: #000;
+    }
+    .dark-version input:checked + .toggledark:before {
+        /* -webkit-transform: translateX(24px); */
+        /* transform: translateX(24px); */
+        background-image: url(img/www.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    body {
+        background: #fff;
+    }
+    .mission h3 {
+        color: #000;
+        background: #BFE2FF; 
+        border: 1px solid #337AB7;
+        margin-bottom: 17px;
+        position: relative;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    
+    
+    body.dark {
+        background: #000;
+        
+    }
+    .dark .mission h1 {
+color: #fff;
+background: #337AB7; 
+border: 1px solid #000;
+}    
+
+.dark .ver {
+margin: 11px;
+padding: 20px;
+text-align: center;
+font-family: 'Halogen cyrillic';
+src: url(Halogen_0.ttf);
+/*color: #ffa8a8;*/
+color: #fafafa;
+}
+
+.dark .column img + p {
+font-size: 15px;
+text-align: center;
+color: #fafafa;
+padding-bottom: 10px;
+background-color: rgb(14 80 126 / 78%);
+border-radius: 5px;
+margin-top: 9px;
+}
+
+
+.dark .column img {
+    margin-top: 51px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: inset 2px 2px 5px rgb(255 255 255 / 42%), 1px 1px 5px rgb(255 255 255 / 93%);
+}
+
+
+.dark .butrew{
+    color: #fafafa99;
+    background-color: rgb(14 80 126 / 78%);
+  margin: 10px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 150px;
+    box-shadow: inset 2px 2px 5px rgb(255 255 255 / 42%), 1px 1px 5px rgb(255 255 255 / 93%);
+    
+
+  
+    }
+
+    .dark .learn-morew {
+        display: table;
+    margin: 5px 11px;
+    padding: 1px 6;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.8);
+    background-color: rgb(255 255 255 / 78%);
+    font-size: 1.2em;
+    display: inline-block;
+    width: 103px;
+    font-size: 17px;
+    height: 25px;
+    padding: 3px margin: 5px;
+    
+
+
+}
+
+
+.dark .butre{
+    color: #fafafa99;
+    background-color: rgb(14 80 126 / 78%);
+    margin: 0px;
+    margin-top: 15px;
+    padding: 5px;
+    min-height: 150px;
+    box-shadow: inset 2px 2px 5px rgb(255 255 255 / 42%), 1px 1px 5px rgb(255 255 255 / 93%);
+}
+
+
+.dark .butrew {
+    color: #fafafa99;
+    background-color: rgb(14 80 126 / 78%);
+    margin: 0px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 30px;
+    box-shadow: inset 2px 2px 5px rgb(255 255 255 / 42%), 1px 1px 5px rgb(255 255 255 / 93%);
+}
+
+
+.dark .sda {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+.dark .weqe {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    background-color: #23313d;
+    margin-top: 17px;
+    background-color: rgb(14 80 126 / 78%);
+color: #ffffff;
+    font-family: 'Halogen cyrillic';
+    margin: 30px;
+}
+
+
+@media (max-width: 979px){
+.dark .section-title {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+}
+
+@media (max-width: 767px){
+.dark .section-title {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+}
+
+
+@media (max-width: 480px){
+.dark .section-title {
+    font-size: 2.4em;
+    margin-bottom: 0;
+}
+}
+
+
+
+
+    @media (max-width: 480px)
+    {
+        .dark-version .toggledark:before{
+            
+        top: -21px;
+        bottom: 0px;
+        width: 67px;
+        left: 2px;
+        content: "";
+        height: 64px;
+        margin: auto 0;
+        position: absolute;
+        transition: 0.5s;
+        background-image: url(img/wwwe.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 17px;
+    }
+        }
+    
+    
+        
+        </style>
+
+
+
+
+<script>
+function toggledark() {
+if (localStorage.getItem('theme') === 'dark') {
+    localStorage.removeItem('theme');
+    document.body.classList.remove("dark");
+    } else {
+    localStorage.setItem('theme', 'dark');
+    document.body.classList.add("dark");
+}
+}
+if (localStorage.getItem('theme') === 'dark') {
+document.body.classList.add('dark');
+document.getElementById('toggledark').checked = true;
+} else {
+document.body.classList.remove('dark');
+document.getElementById('toggledark').checked = false;
+}
+</script>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="header-left">
+        <h1><a href="index.html">ERERA</a></h1>
+    </div>
+    <div class="header-right">
+        <label for="open">
+            <span class="hidden-desktop"></span>
+        </label>
+        <input type="checkbox" name="" id="open">
+        <nav>
+            <a href="../index.php">Нексус</a>
+            <a href="../knowledge base.php">База знаний</a>
+            
+           
+            <a href="../contacts.php">Контакты</a>
+        </nav>
+    </div>
+</div>
+</header>
+<section class="clearfix">
+<div class="container">
+    <div class="section-left">
+        <h1 class="section-title">Великая энциклопедия по <br>League of Legends</h1>
+        <h5 class="section-tagline">Подпишитесь на рассылку новых знаний</h5>
+        <label class="dark-version">
+          <input type="checkbox" onchange="toggledark()" id="toggledark">
+          <span class="toggledark round"></span>
+      </label>
+    </div>
+    <div class="section-right">
+        <button class="learn-more" onclick="window.location.href = '../subscribe.php';">Подписаться</button>
+    </div>
+</div>
+</section>
+
+
+<style>
+    .vertical-menu {
+        width: 100%px;
+        margin: 11px;
+        font-size: 15px;
+    }
+    
+    .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+      
+    }
+    
+    .vertical-menu a:hover {
+        background-color: #ccc;
+    }
+    
+    .vertical-menu a.active {
+        background-image: -webkit-linear-gradient(#80059E 0%, #550486 100%);
+        color: white;
+    }
+    .ver{
+        margin: 11px;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Halogen cyrillic'; 
+	src: url(Halogen_0.ttf); 
+    }
+    .wsa{
+        color: #000;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+
+
+    .butrew{
+        background-color: #f5f5f5;
+        margin: 10px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 150px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+    color: #000;
+
+    line-height: 194%;
+    }
+
+
+
+
+.butre{
+  
+  background-color: #f5f5f5;
+  margin: 0px;
+    margin-top: 15px;
+    padding: 5px;
+    min-height: 150px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+    color: #000;
+
+    line-height: 194%;
+}
+.asd{
+  
+  font-size: 19px;
+}
+.weqe {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    background-color: #23313d;
+    margin-top: 17px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+    background-color: #f5f5f5;
+    font-family: 'Halogen cyrillic';
+    margin: 30px;
+}
+
+ul {
+    padding-left: 23px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+.butrew {
+    background-color: #f5f5f5;
+    margin: 0px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 30px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+    color: #000;
+    line-height: 194%;
+}
+.butreww {
+    background-color: #f5f5f5;
+    margin: 0px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 30px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+    color: #000;
+    line-height: 194%;
+    margin: 30px;
+}
+
+
+
+.dark .butreww {
+    color: #fafafa99;
+    background-color: rgb(14 80 126 / 78%);
+    margin: 0px;
+    margin-top: 15px;
+    padding: 9px;
+    min-height: 30px;
+    box-shadow: inset 2px 2px 5px rgb(255 255 255 / 42%), 1px 1px 5px rgb(255 255 255 / 93%);
+    margin: 30px;
+}
+
+
+    </style>
+
+   <h1 class="weqe">Зед</h1>
+    
+
+<div class="butreww">
+  <p class="asd">Чемпион Зед входит в класс убийц, из ходя из этого он иммет высокую подвижность, легкий доступ к цели и врзывной урон.</p>
+  <p class="asd">Умение этого чемпиона больше орентированы на одну выбранную цель. Его умения такие как Q(Зед кидает сюрикен) и E(Зед делает круговой удар) могут бить по одной или несколько целям, ко всему это можно преминить W(Зед выпускает тень) это умение дает повторить остальные два умения, так же Зед может перещатся между своими теняними. Главная способность это ультимейт R(Зед переносится к чемпионы на которого было применено умение), Зед переносить за спину чемпион, над тем чемпином которому было пременено данное умение появляется сюрике над головой, спустя некоторое время оно взорвятся и нанесет процентный урон. 
+</p>
+<p class="asd"></p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="column">
+       
+  <a>
+   
+    <div class="butre">
+        <h2>Сильные стороны чемпиона
+        </h2>
+       
+<ul>
+    <li>Быстрый фарм линий</li>
+    <li>Быстро перемищается по карте</li>
+    <li>Взрывной урон</li>
+</ul>
+      </div>
+ 
+
+      </div>
+ 
+     
+            <div class="column">
+       
+                <a>
+                 
+                  <div class="butrew">
+                    <h2>
+                   Сложность обучение: 5
+                    </h2>
+                    
+       
+                  </div>
+                  
+                  <div class="butrew">
+                    <h2>
+                   Эффективность в командных боях: 4
+                    </h2>
+                    
+       
+                  </div>
+                  <div class="butrew">
+                    <h2>
+                   Сила в одичной игре: 5
+                    </h2>
+                    
+       
+                  </div>
+                    </div>
+                  
+   
+  </div>
+
+
+
+</a>
+<style>
+    .hr{
+        color: #000;
+        font-size: 17px;
+    }
+    .ssqe{
+        color: #000;
+        font-size: 17px;
+    }
+
+
+
+
+    .sda{
+        width: 100%;
+        background-color: #fff;
+        /* цвет для фона  #8a85dbc4; */
+        color: #ffffff;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .wqs{
+        padding-top: 1px;
+    }
+    .wdafs{
+        
+        height: 24px;
+    background-color: #80059E;
+    border-radius: 9px;
+    margin: 10px;
+    display: inline-block;
+    width: 104px;
+    font-size: 17px;
+    padding: 3px
+    }
+
+
+    .learn-morew {
+        display: table;
+    margin: 5px 11px;
+    padding: 1px 6;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.8);
+    background-color: rgb(203 191 191 / 54%);
+    font-size: 1.2em;
+    display: inline-block;
+    width: 103px;
+    font-size: 17px;
+    height: 25px;
+    padding: 3px margin: 5px;
+    
+
+    
+}
+.learn-morew:hover{
+background: #EAAF00;
+}
+
+</style>
+<div class="sda">
+   
+    <button class="learn-morew" onclick="window.location.href = 'azir.html';">Назад</button>
+    <button class="learn-morew" onclick="window.location.href = '../champions.php';">Чемпионы</button>
+    <button class="learn-morew" onclick="window.location.href = 'maste.html';">Вперед</button>
+   
+</div>
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+     
+
+        <p class="footer-links">
+            <a href="../index.php" class="link-1">Нексус</a>
+            <a href="../knowledge base.php">База знаний</a>
+          
+            <a href="../contacts.php">Контакты</a>
+            
+        
+        </p>
+
+        <p class="footer-company-name">©2023-2023 ERERA не одобрена Riot Games и не отражает взгляды или мнения Riot Games или кого-либо, официально участвующего в производстве или управлении League of Legends. League of Legends™ и Riot Games являются товарными знаками или зарегистрированными товарными знаками Riot Games, Inc.</p>
+    </div>
+
+    <div class="footer-center">
+
+    
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>Подписывайтесь на нас в социальных сетях</span>
+           
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="https://m.vk.com/"><i class="fa fa-facebook"></i> <img src="img/icons8-vk-48.png" width="38px" height="38px" aligan=”center”></a>
+            <a href="https://web.telegram.org/k/"><i class="fa fa-facebook"></i> <img src="img/icons8-телеграйцуйуцмма-app-48.png" width="38px" height="38px" aligan=”center”></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-facebook"></i> <img src="img/icons8-instagrфвыфam-48.png" width="38px" height="38px" aligan=”center”></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-facebook"></i> <img src="img/icons8цу-уцйютубцйу-48.png" width="38px" height="38px" aligan=”center”></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

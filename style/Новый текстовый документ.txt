@@ -1,0 +1,17 @@
+главная
+база знаний
+предметы
+чемпионы
+подписаться
+контакты
+
+
+
+.ver {
+    margin: 33px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Halogen cyrillic';
+    src: url(Halogen_0.ttf);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(0 0 0);
+} 
